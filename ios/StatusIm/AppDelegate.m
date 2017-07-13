@@ -12,7 +12,8 @@
 #import "RCTBundleURLProvider.h"
 #import "RCTRootView.h"
 #import "SplashScreen.h"
-#import "TestFairy.h"
+#import "TestFairy.h" 
+#define NSLog(s, ...) do { NSLog(s, ##__VA_ARGS__); TFLog(s, ##__VA_ARGS__); } while (0)
 @import Instabug;
 
 @implementation AppDelegate
